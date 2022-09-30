@@ -16,6 +16,17 @@ import AdbIcon from '@mui/icons-material/Adb';
 import LaptopChromebookIcon from '@mui/icons-material/LaptopChromebook';
 import ReactPlayer from 'react-player'
 import pdf from "../pdf/David_López_Valdes_-_Full_Stack_Developer(1).pdf"
+import SpeedDial from '@mui/material/SpeedDial';
+import SpeedDialIcon from '@mui/material/SpeedDialIcon';
+import SpeedDialAction from '@mui/material/SpeedDialAction';
+import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+const actions = [
+    { icon: <GitHubIcon />, name: 'GitHub' ,redirect: "https://github.com/Davlopez06" },
+    { icon: <LinkedInIcon />, name: 'LinkedIn', redirect: "https://www.linkedin.com/in/david-lopez-valdes-310630233/" }
+  ];
 
 export default function Home(){
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,6 +35,10 @@ export default function Home(){
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
+  const handleRedirect=(url)=>{
+    window.location.href = url;
+  }
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -183,6 +198,22 @@ Redux, SQL entre otras tecnologías del sector. Participe en la creación de un 
                 Click here for my cv
             </a>
         </button>
+        <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
+      <SpeedDial
+        ariaLabel="SpeedDial basic example"
+        sx={{ position: 'absolute', bottom: 10, right: 16 }}
+        icon={<SpeedDialIcon />}
+      >
+        {actions.map((action) => (
+          <SpeedDialAction
+            key={action.name}
+            icon={action.icon}
+            tooltipTitle={action.name}
+            onClick={()=>handleRedirect(action.redirect)}
+          />
+        ))}
+      </SpeedDial>
+    </Box>
         </div>
     </div>
     </div>

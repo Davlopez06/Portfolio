@@ -4,6 +4,9 @@
     z-index: 1 !important;
     border: 1px solid transparent !important;
 }
+.home{
+    position: relative;
+}
 
 .portada{
     background-image: url("../img/business-woman-working-on-laptop.jpg");
@@ -201,6 +204,7 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 10%;
+    position: relative;
 }
 
 .cvtitle{
