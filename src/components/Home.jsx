@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import LaptopChromebookIcon from '@mui/icons-material/LaptopChromebook';
 import ReactPlayer from 'react-player'
-import pdf from "../pdf/David_López_Valdes_-_Full_Stack_Developer(1).pdf"
+import pdf from "../pdf/David_López_Valdes_-_Full_Stack_Developer.pdf"
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
