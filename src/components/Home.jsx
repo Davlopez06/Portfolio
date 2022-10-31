@@ -156,6 +156,23 @@ Redux, SQL entre otras tecnologías del sector. Participe en la creación de un 
           height='60vh'/>
             <a className={css.repo} href="https://github.com/Davlopez06/PF-Deploy-HMovies?organization=Davlopez06&organization=Davlopez06">Repositorio</a>
         </div>
+
+        <div className={css.proyec}>
+            <h3 className={css.proytitle}>Full Stack Web Developer - PokeMaster	</h3>
+            <h5 className={css.date}>octubre 2022</h5>
+            <ul className={css.list}>
+                <li className={css.proylistitem}>Diseñar y desarrollar una App de pokemones que incluía: búsquedas, filtrados, ordenamientos, creación y eliminacion</li>
+                <li className={css.proylistitem}>Desarrollar la app usando para el Front React, Redux, CSS, Material UI y Back desarrollado en Node.js con Express. Base de datos en MONGODB y Mongoose.</li>
+
+            </ul>
+            <ReactPlayer url='https://vimeo.com/765897676'
+          className='react-player'
+          playing
+          width='60vw'
+          height='60vh'/>
+            <a href="https://github.com/Davlopez06/PokeMaster" className={css.repo}>Repositorio</a>
+        </div>
+
         <div className={css.experience}>
         <h2 className={css.extitle}>Experiencia profecional:</h2>
         <div className={css.exproyec}>
